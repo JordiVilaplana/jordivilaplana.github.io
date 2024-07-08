@@ -1,5 +1,22 @@
 @import "./open-color.css";
 
+/* GUIDELINES
+ *
+ * SPACING:
+ * 0.1  2px
+ * 0.2  4px
+ * 0.4  8px
+ * 0.6 12px
+ * 0.8 16px
+ * 1.2 24px
+ * 1.6 32px
+ * 2.0 40px
+ * 2.4 48px
+ * 3.2 64px
+ * 4.0 80px
+ * 4.8 96px
+ */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +30,118 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
-  color: var(--oc-gray-8);
+  color: var(--oc-gray-7);
+  background-color: var(--oc-gray-1);
+}
+
+a:link,
+a:visited {
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid transparent;
+  text-decoration: none;
+  color: var(--oc-green-9);
+  transition: all 0.2s;
+}
+
+a:hover,
+a:active {
+  border-bottom: 0.1rem solid var(--oc-green-9);
+}
+
+.no-style-link:link,
+.no-style-link:visited,
+.no-style-link:hover,
+.no-style-link:active {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: none;
+  transition: none;
+}
+
+.t--white {
+  color: var(--oc-gray-0);
+}
+
+.t--green-dark {
+  color: var(--oc-green-9);
+}
+
+.t--purple-dark {
+  color: var(--oc-indigo-8);
+}
+
+.b--green-dark {
+  background-color: var(--oc-green-9);
+}
+
+.b--purple-dark {
+  background-color: var(--oc-indigo-8);
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 4rem;
+}
+
+.g--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* PAGE HEADER */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.header-title {
+  display: inline-block;
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--oc-gray-7);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  font-weight: 600;
+}
+
+/* SECTION FRONT */
+
+.section-front {
+  background-color: var(--oc-green-1);
+}
+
+.front-presentation {
+  padding: 2.4rem 0;
+}
+
+.front-title {
+  margin-bottom: 3.2rem;
+  font-family: "Inconsolata", monospace;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.f-title-block {
+  padding: 0.6rem;
+}
+
+.motivational {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
 }
