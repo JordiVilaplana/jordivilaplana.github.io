@@ -129,6 +129,11 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid.g--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+}
+
 /* PAGE HEADER */
 
 .page-header {
@@ -195,7 +200,7 @@ h3 {
 }
 
 /* SECTION VALUES */
-.value-item {
+.figure-item {
   padding: 1.2rem;
   border-radius: 0.8rem;
   box-shadow: 0 1rem 1.6rem var(--oc-green-1);
@@ -215,7 +220,7 @@ h3 {
   border-radius: 50%;
 }
 
-.value-text {
+.figure-text {
   font-size: 0.8rem;
   line-height: 1.6;
 }
