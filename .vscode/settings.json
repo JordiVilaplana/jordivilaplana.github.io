@@ -2,5 +2,5 @@
   "html.format.wrapLineLength": 0,
   "editor.wordWrap": "on",
   "prettier.endOfLine": "auto",
-  "prettier.printWidth": 120
+  "prettier.printWidth": 160
 }

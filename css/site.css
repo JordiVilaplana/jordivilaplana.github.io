@@ -8,7 +8,9 @@
  * 0.4  8px
  * 0.6 12px
  * 0.8 16px
+ * 1.0 20px
  * 1.2 24px
+ * 1.4 28px
  * 1.6 32px
  * 2.0 40px
  * 2.4 48px
@@ -60,6 +62,31 @@ a:active {
   transition: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inconsolata", monospace;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--oc-green-9);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: var(--oc-indigo-8);
+}
+
+.t--block-end::after {
+  content: "\2588";
+}
+
 .t--white {
   color: var(--oc-gray-0);
 }
@@ -80,6 +107,10 @@ a:active {
   background-color: var(--oc-indigo-8);
 }
 
+.section {
+  padding: 4rem 0;
+}
+
 .container {
   max-width: 60rem;
   margin: 0 auto;
@@ -90,8 +121,12 @@ a:active {
   gap: 4rem;
 }
 
-.g--2-cols {
+.grid.g--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid.g--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* PAGE HEADER */
@@ -104,7 +139,7 @@ a:active {
 }
 
 .header-title {
-  display: inline-block;
+  display: block;
   font-family: "Inconsolata", monospace;
   font-weight: 600;
   font-size: 2rem;
@@ -125,7 +160,7 @@ a:active {
 }
 
 .front-presentation {
-  padding: 2.4rem 0;
+  grid-column: span 2;
 }
 
 .front-title {
@@ -138,10 +173,61 @@ a:active {
 
 .f-title-block {
   padding: 0.6rem;
+  letter-spacing: 0.1rem;
 }
 
 .motivational {
   text-align: center;
   font-size: 1rem;
   font-style: italic;
+}
+
+/* SECTION FEATURED */
+
+.section-featured {
+  padding-top: 2.4rem;
+}
+
+.featured-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* SECTION VALUES */
+.value-item {
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 1.6rem var(--oc-green-1);
+}
+
+.figure-icon-container {
+  display: block;
+  text-align: center;
+}
+
+.figure-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  padding: 0.8rem;
+  color: var(--oc-green-9);
+  background-color: var(--oc-indigo-1);
+  border-radius: 50%;
+}
+
+.value-text {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* PAGE FOOTER */
+
+.page-footer {
+  border-top: 0.1rem solid var(--oc-gray-2);
+}
+
+.copyright {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 0.6rem;
 }
