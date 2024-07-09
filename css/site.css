@@ -38,16 +38,21 @@ body {
   background-color: var(--oc-gray-1);
 }
 
+.cta-container {
+  display: block;
+  text-align: center;
+}
+
 .cta-link:link,
 .cta-link:visited {
   display: inline-flex;
   align-items: center;
-  padding: 0.6rem 1.2rem;
   text-decoration: none;
   color: var(--oc-gray-0);
   border-radius: 10rem;
   border: 0.2rem solid transparent;
   background-color: var(--oc-indigo-8);
+  box-shadow: 0 0.2rem 0.4rem var(--oc-indigo-9);
   transition: all 0.2s;
 }
 
@@ -55,6 +60,28 @@ body {
 .cta-link:active {
   border: 0.2rem solid var(--oc-indigo-2);
   background-color: var(--oc-indigo-9);
+}
+
+.cta-link.cta--med {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+}
+
+.cta-link.cta--big {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+}
+
+.cta-link.cta--med .cta-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  color: var(--oc-gray-0);
+}
+
+.cta-link.cta--big .cta-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--oc-gray-0);
 }
 
 .no-style-link:link,
@@ -139,6 +166,13 @@ h3 {
   box-shadow: 0 0.4rem 0.8rem var(--oc-green-9);
 }
 
+.big-card-txt {
+  padding: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--oc-gray-0);
+}
+
 .grid {
   display: grid;
   gap: 4rem;
@@ -155,6 +189,10 @@ h3 {
 .grid.g--4-cols {
   grid-template-columns: repeat(4, 1fr);
   gap: 3.2rem;
+}
+
+.g--span-2-wide {
+  grid-column: span 2;
 }
 
 .figure-item {
@@ -277,6 +315,7 @@ h3 {
   border-radius: 50%;
   border: 0.2rem solid transparent;
   background-color: var(--oc-indigo-8);
+  box-shadow: 0 0.2rem 0.4rem var(--oc-indigo-9);
   transition: all 0.2s;
 }
 
