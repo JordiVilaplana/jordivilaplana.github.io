@@ -178,20 +178,21 @@ h3 {
 
 .grid {
   display: grid;
-  gap: 4rem;
 }
 
 .grid.g--2-cols {
   grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }
 
 .grid.g--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
 }
 
 .grid.g--4-cols {
   grid-template-columns: repeat(4, 1fr);
-  gap: 3.2rem;
+  gap: 2.4rem;
 }
 
 .g--span-2-wide {
@@ -220,7 +221,8 @@ h3 {
 
 .figure-text {
   font-size: 0.8rem;
-  line-height: 1.6;
+  line-height: 2;
+  letter-spacing: 0.05rem;
 }
 
 /* PAGE HEADER */
