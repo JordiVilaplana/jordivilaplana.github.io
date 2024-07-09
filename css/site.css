@@ -38,18 +38,23 @@ body {
   background-color: var(--oc-gray-1);
 }
 
-a:link,
-a:visited {
-  padding-bottom: 0.1rem;
-  border-bottom: 0.1rem solid transparent;
+.cta-link:link,
+.cta-link:visited {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
-  color: var(--oc-green-9);
+  color: var(--oc-gray-0);
+  border-radius: 10rem;
+  border: 0.2rem solid transparent;
+  background-color: var(--oc-indigo-8);
   transition: all 0.2s;
 }
 
-a:hover,
-a:active {
-  border-bottom: 0.1rem solid var(--oc-green-9);
+.cta-link:hover,
+.cta-link:active {
+  border: 0.2rem solid var(--oc-indigo-2);
+  background-color: var(--oc-indigo-9);
 }
 
 .no-style-link:link,
@@ -73,6 +78,7 @@ h6 {
 
 h2 {
   font-size: 2.4rem;
+  font-weight: 600;
   color: var(--oc-green-9);
   margin-bottom: 1rem;
 }
@@ -80,11 +86,12 @@ h2 {
 h3 {
   margin: 1rem 0;
   font-size: 1.4rem;
+  font-weight: 600;
   color: var(--oc-indigo-8);
 }
 
 .h-white {
-  color: var(--oc-gray-1);
+  color: var(--oc-gray-0);
 }
 
 .t--block-end::after {
@@ -199,6 +206,20 @@ h3 {
   font-weight: 600;
 }
 
+.nav-item a:link,
+.nav-item a:visited {
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid transparent;
+  text-decoration: none;
+  color: var(--oc-green-9);
+  transition: all 0.2s;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  border-bottom: 0.1rem solid var(--oc-green-9);
+}
+
 /* SECTION FRONT */
 
 .section-front {
@@ -212,7 +233,7 @@ h3 {
 .front-title {
   margin-bottom: 3.2rem;
   font-family: "Inconsolata", monospace;
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -224,20 +245,51 @@ h3 {
 
 .motivational {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
 }
 
-/* SECTION FEATURED */
+/* SECTION SOCIAL LINKS */
 
-.section-featured {
-  padding-top: 2.4rem;
+.socials {
+  padding: 2rem 0;
 }
 
-.featured-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.8rem;
+.socials-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.social-item {
+  font-size: 1.6rem;
+  color: var(--oc-gray-0);
+}
+
+.social-link:link,
+.social-link:visited {
+  display: inline-block;
+  height: 4.4rem;
+  width: 4.4rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: 0.2rem solid transparent;
+  background-color: var(--oc-indigo-8);
+  transition: all 0.2s;
+}
+
+.social-link:hover,
+.social-link:active {
+  border: 0.2rem solid var(--oc-indigo-2);
+  background-color: var(--oc-indigo-9);
+}
+
+.social-logo {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--oc-gray-0);
 }
 
 /* PAGE FOOTER */
