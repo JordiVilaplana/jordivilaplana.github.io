@@ -2,7 +2,7 @@
 
 /* GUIDELINES
  *
- * SPACING:
+ * SPACING & FONT SIZE:
  * 0.1  2px
  * 0.2  4px
  * 0.4  8px
@@ -72,7 +72,7 @@ h6 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: var(--oc-green-9);
   margin-bottom: 1rem;
 }
@@ -81,6 +81,10 @@ h3 {
   margin: 1rem 0;
   font-size: 1.4rem;
   color: var(--oc-indigo-8);
+}
+
+.h-white {
+  color: var(--oc-gray-1);
 }
 
 .t--block-end::after {
@@ -116,6 +120,18 @@ h3 {
   margin: 0 auto;
 }
 
+.container.big-card {
+  padding: 1.6rem;
+  background-color: var(--oc-gray-7);
+  box-shadow: 0 0.4rem 0.8rem var(--oc-gray-9);
+  border-radius: 0.8rem;
+}
+
+.container.big-card.card-green {
+  background-color: var(--oc-green-8);
+  box-shadow: 0 0.4rem 0.8rem var(--oc-green-9);
+}
+
 .grid {
   display: grid;
   gap: 4rem;
@@ -132,6 +148,31 @@ h3 {
 .grid.g--4-cols {
   grid-template-columns: repeat(4, 1fr);
   gap: 3.2rem;
+}
+
+.figure-item {
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.8rem 1.6rem var(--oc-green-1);
+}
+
+.figure-icon-container {
+  display: block;
+  text-align: center;
+}
+
+.figure-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  padding: 0.8rem;
+  color: var(--oc-green-9);
+  background-color: var(--oc-indigo-1);
+  border-radius: 50%;
+}
+
+.figure-text {
+  font-size: 0.8rem;
+  line-height: 1.6;
 }
 
 /* PAGE HEADER */
@@ -197,32 +238,6 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.8rem;
-}
-
-/* SECTION VALUES */
-.figure-item {
-  padding: 1.2rem;
-  border-radius: 0.8rem;
-  box-shadow: 0 1rem 1.6rem var(--oc-green-1);
-}
-
-.figure-icon-container {
-  display: block;
-  text-align: center;
-}
-
-.figure-icon {
-  height: 1.6rem;
-  width: 1.6rem;
-  padding: 0.8rem;
-  color: var(--oc-green-9);
-  background-color: var(--oc-indigo-1);
-  border-radius: 50%;
-}
-
-.figure-text {
-  font-size: 0.8rem;
-  line-height: 1.6;
 }
 
 /* PAGE FOOTER */
