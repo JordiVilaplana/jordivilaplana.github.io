@@ -17,7 +17,7 @@
  * 3.2 64px
  * 4.0 80px
  * 4.8 96px
- */
+**/
 
 * {
   margin: 0;
@@ -36,6 +36,33 @@ body {
   line-height: 1;
   color: var(--oc-gray-7);
   background-color: var(--oc-gray-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inconsolata", monospace;
+}
+
+h2 {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--oc-green-9);
+}
+
+h3 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--oc-indigo-8);
+}
+
+.h-white {
+  color: var(--oc-gray-0);
 }
 
 .cta-container {
@@ -94,33 +121,6 @@ body {
   color: inherit;
   border-bottom: none;
   transition: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Inconsolata", monospace;
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: var(--oc-green-9);
-  margin-bottom: 1rem;
-}
-
-h3 {
-  margin: 1rem 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--oc-indigo-8);
-}
-
-.h-white {
-  color: var(--oc-gray-0);
 }
 
 .t--block-end::after {
@@ -207,6 +207,7 @@ h3 {
 
 .figure-icon-container {
   display: block;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -342,7 +343,8 @@ h3 {
 }
 
 .copyright {
+  padding-bottom: 0.8rem;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.6;
   font-size: 0.6rem;
 }
