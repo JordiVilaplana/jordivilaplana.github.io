@@ -1,0 +1,66 @@
+@import "./open-color.css";
+
+/* GUIDELINES
+ *
+ * SPACING & FONT SIZE:
+ * 0.1  2px
+ * 0.2  4px
+ * 0.4  8px
+ * 0.6 12px
+ * 0.8 16px
+ * 1.0 20px
+ * 1.2 24px
+ * 1.4 28px
+ * 1.6 32px
+ * 2.0 40px
+ * 2.4 48px
+ * 3.2 64px
+ * 4.0 80px
+ * 4.8 96px
+**/
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 10rem;
+  background-color: var(--oc-indigo-8);
+  box-shadow: 0 0.2rem 0.4rem var(--oc-indigo-9);
+  transition: all 0.2s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  background-color: var(--oc-indigo-9);
+  box-shadow: 0 0.4rem 0.8rem var(--oc-indigo-9);
+}
+
+.contact-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--oc-gray-0);
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: var(--oc-gray-0);
+}
+
+.contact-availability {
+  margin-bottom: 2.4rem;
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--oc-gray-0);
+}
