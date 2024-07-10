@@ -2,5 +2,7 @@
   "html.format.wrapLineLength": 0,
   "editor.wordWrap": "on",
   "prettier.endOfLine": "auto",
-  "prettier.printWidth": 160
+  "prettier.printWidth": 160,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Hack, Consolas, 'Courier New', monospace"
 }

@@ -264,6 +264,19 @@ h3 {
   border-bottom: 0.1rem solid var(--oc-green-9);
 }
 
+/* PAGE FOOTER */
+
+.page-footer {
+  border-top: 0.1rem solid var(--oc-gray-2);
+}
+
+.copyright {
+  padding-bottom: 0.8rem;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 0.6rem;
+}
+
 /* SECTION FRONT */
 
 .section-front {
@@ -334,17 +347,4 @@ h3 {
   height: 2.4rem;
   width: 2.4rem;
   color: var(--oc-gray-0);
-}
-
-/* PAGE FOOTER */
-
-.page-footer {
-  border-top: 0.1rem solid var(--oc-gray-2);
-}
-
-.copyright {
-  padding-bottom: 0.8rem;
-  text-align: center;
-  line-height: 1.6;
-  font-size: 0.6rem;
 }
