@@ -195,6 +195,12 @@ h3 {
   gap: 2.4rem;
 }
 
+.grid.narrow {
+  margin: 0 auto;
+  max-width: 36rem;
+  gap: 2.4rem;
+}
+
 .g--span-2-wide {
   grid-column: span 2;
 }
@@ -202,7 +208,7 @@ h3 {
 .figure-item {
   padding: 1.2rem;
   border-radius: 0.8rem;
-  box-shadow: 0 0.8rem 1.6rem var(--oc-green-1);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
 }
 
 .figure-icon-container {
@@ -221,8 +227,9 @@ h3 {
 }
 
 .figure-text {
+  padding-bottom: 1rem;
   font-size: 0.8rem;
-  line-height: 2;
+  line-height: 1.6;
   letter-spacing: 0.05rem;
 }
 

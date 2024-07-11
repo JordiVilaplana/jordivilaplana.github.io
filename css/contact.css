@@ -20,6 +20,7 @@
 **/
 
 .contact-list {
+  margin: 4.8rem 0;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -57,7 +58,6 @@
 }
 
 .contact-availability {
-  margin-top: 1.6rem;
   text-align: center;
   font-size: 0.8rem;
   font-style: italic;
