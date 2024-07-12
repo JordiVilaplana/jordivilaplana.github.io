@@ -1,0 +1,32 @@
+@import "./open-color.css";
+
+/* GUIDELINES
+ *
+ * SPACING & FONT SIZE:
+ * 0.1  2px
+ * 0.2  4px
+ * 0.4  8px
+ * 0.6 12px
+ * 0.8 16px
+ * 1.0 20px
+ * 1.2 24px
+ * 1.4 28px
+ * 1.6 32px
+ * 2.0 40px
+ * 2.4 48px
+ * 3.2 64px
+ * 4.0 80px
+ * 4.8 96px
+**/
+
+.grid.gallery {
+  align-self: center;
+  justify-self: center;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.galery-img {
+  height: 8rem;
+}

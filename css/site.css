@@ -201,6 +201,10 @@ h3 {
   gap: 2.4rem;
 }
 
+.grid.g--no-gap {
+  gap: 0 !important;
+}
+
 .g--span-2-wide {
   grid-column: span 2;
 }
@@ -294,10 +298,12 @@ h3 {
 
 .section-front {
   background-color: var(--oc-green-1);
+  padding: 0;
 }
 
 .front-presentation {
   grid-column: span 2;
+  padding: 4rem 0;
 }
 
 .front-title {
@@ -311,4 +317,12 @@ h3 {
 .f-title-block {
   padding: 0.6rem;
   letter-spacing: 0.1rem;
+}
+
+.front-img-box {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(235, 251, 238, 0.4), rgba(211, 249, 216, 0.2)), url(../img/front.webp);
+  background-size: cover;
+  background-position: center;
 }
