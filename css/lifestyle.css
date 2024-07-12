@@ -29,4 +29,11 @@
 
 .galery-img {
   height: 8rem;
+  z-index: 0;
+  transition: transform 0.4s;
+}
+
+.galery-img:hover {
+  z-index: 10;
+  transform: scale(125%);
 }
