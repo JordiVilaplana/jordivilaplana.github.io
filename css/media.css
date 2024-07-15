@@ -1,0 +1,85 @@
+@media (max-width: 1198px) {
+  html {
+    font-size: 18px;
+  }
+
+  .grid.g--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 958px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 718px) {
+  html {
+    font-size: 16px;
+  }
+
+  .grid.g--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid.g--3-cols.narrow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container.grid.g--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-hiking {
+    grid-row: 3;
+  }
+
+  .contact-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 478px) {
+  html {
+    font-size: 16px;
+  }
+
+  .grid.g--2-cols {
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin: 0 2rem;
+  }
+
+  .grid.g--3-cols {
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin: 0 2rem;
+  }
+
+  .grid.g--4-cols {
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin: 0 2rem;
+  }
+
+  .record-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin: 0 2rem;
+  }
+
+  .page-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .socials-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .socials-list .social-item:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
