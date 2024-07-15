@@ -6,6 +6,17 @@
   font-style: italic;
 }
 
+/* IMG */
+
+.big-card-img {
+  align-self: center;
+  justify-self: center;
+}
+
+.big-card-img img {
+  width: 100%;
+}
+
 /* SECTION SOCIAL LINKS */
 
 .socials {

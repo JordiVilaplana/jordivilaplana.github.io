@@ -31,6 +31,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .big-card-img {
+    grid-row: 2;
+  }
+
   .section-hiking {
     grid-row: 3;
   }
